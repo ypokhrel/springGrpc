@@ -8,7 +8,9 @@
 		<module>user-service</module>
 		<module>movie-service</module>
         <module>movie-flix</module>
-    </modules>
+		<module>rest-user-service</module>
+		<module>rest-movie-service</module>
+	</modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -21,7 +23,7 @@
 	<name>springGrpc</name>
 	<description>Demo project for Spring Boot with grpc</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>

@@ -6,3 +6,7 @@ grpc:
     movie-service:
       address: static://localhost:7575
       negotiationType: plainText
+
+rest:
+  user-service-url: http://localhost:6666
+  movie-service-url: http://localhost:7676
