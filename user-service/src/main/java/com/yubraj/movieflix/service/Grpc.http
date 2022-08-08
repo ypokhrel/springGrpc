@@ -1,6 +1,0 @@
-GRPC localhost:6565
-Content-Type: application/grpc
-
-{
-    "login_id": "sam123"
-}

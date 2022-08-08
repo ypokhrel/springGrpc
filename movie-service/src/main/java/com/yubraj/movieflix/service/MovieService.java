@@ -22,7 +22,6 @@ public class MovieService extends MovieServiceGrpc.MovieServiceImplBase {
     @Override
     public void getMovies(MovieSearchRequest request, StreamObserver<MovieSearchResponse> responseObserver) {
 
-    System.out.println(request.getGenre().toString());
         List<Movie> movieList = repositiry.findAllByGenreOrderByYearDesc(request.getGenre().toString());
         List<MovieDto> movieDtos = movieList.stream().map(movie ->
                         MovieDto.newBuilder()
